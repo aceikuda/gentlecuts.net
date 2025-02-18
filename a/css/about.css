@@ -1,0 +1,85 @@
+@font-face {
+  font-family: "Libre Baskerville";
+  src:
+    url("../fonts/librebaskerville-regular.woff2") format("woff2"),
+    url("../fonts/librebaskerville-regular.woff") format("woff");
+  font-display: swap;
+}
+
+:root {
+  --color-fg: #000;
+  --color-bg: #feecec;
+  --color-selection: var(--color-bg);
+  --color-selection-bg: var(--color-fg);
+  --font: 1em/2 var(--font-family);
+  --font-family: 'Libre Baskerville', Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  scrollbar-color: var(--color-fg) var(--color-bg);
+  scrollbar-width: thin;
+  scroll-behavior: smooth;
+  color-scheme: light dark;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-fg: #ddd;
+    --color-bg: #000;
+    --color-selection: var(--color-bg);
+    --color-selection-bg: #ddd;
+  }
+}
+
+html {
+  color: var(--color-fg);
+  background: var(--color-bg);
+  font: var(--font);
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0 auto;
+  max-width: 750px;
+  padding: 1em;
+}
+
+h1, h2, h3, h4 {
+  letter-spacing: 1.5px;
+}
+
+a, a:visited, a:active {
+  color: var(--color-fg);
+  text-decoration: underline;
+  transition: .3s;
+}
+
+a:hover {
+  color: var(--color-selection);
+  background: var(--color-selection-bg);
+  text-decoration: none;
+  transition: .3s;
+}
+
+hr {
+  color: var(--color-fg);
+  border-color: var(--color-fg);
+  opacity: 30%;
+}
+
+footer {
+  text-align: center;
+  opacity: 50%;
+}
+
+::selection {
+  color: var(--color-selection);
+  background: var(--color-selection-bg);
+}
+
+img, br, hr {
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+.center {
+  text-align: center;
+}

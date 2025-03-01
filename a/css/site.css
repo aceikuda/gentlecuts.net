@@ -76,6 +76,9 @@ a:hover {
 }
 
 @media (max-width: 595px) {
+  :root {
+    --font: 1.7em/1.7 var(--font-family);
+  }
   header {
     min-height: 100vh;
   }

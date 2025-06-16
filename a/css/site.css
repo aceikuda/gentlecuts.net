@@ -12,7 +12,7 @@
   --color-selection: var(--color-bg);
   --color-selection-bg: var(--color-fg);
   --font: 2em/1.7 var(--font-family);
-  --font-family: 'Sligoil', Helvetica, Arial, sans-serif;
+  --font-family: "Sligoil", Helvetica, Arial, sans-serif;
   scrollbar-color: var(--color-fg) var(--color-bg);
   scrollbar-width: thin;
   scroll-behavior: smooth;
@@ -53,7 +53,7 @@ header {
 }
 
 footer {
-  font-size: 80%;
+  font-size: 70%;
   opacity: 80%;
 }
 
